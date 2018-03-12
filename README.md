@@ -526,7 +526,10 @@ enable-cors=*
 
 ```
 var api_blockexplorer = "http://daemonhost.com:1118";
+(e.g. var api_blockexplorer ="http://62.75.139.132:39527"; with RPC-Serverport
 ```
+
+Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 
 
 Credits
