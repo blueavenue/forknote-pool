@@ -11,7 +11,7 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 This pool is configured for Properteum Coins
 
-It works fine with Ubuntu 14.04. and latest version of forknote.
+It works fine with Ubuntu 14.04. and latest version of Properteum Repo (forknote) - solved issue with Allow Origins in src.
 
 We solved much problems with:
 
