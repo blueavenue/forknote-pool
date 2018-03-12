@@ -9,7 +9,16 @@ High performance Node.js (with native C addons) mining pool for Cryptonote based
 
 Comes with lightweight example front-end script which uses the pool's AJAX API.
 
-This is forknote-pool for Properteum Coins
+This pool is configured for Properteum Coins
+
+It works fine with Ubuntu 14.04. and latest version of forknote.
+
+We solved much problems with:
+
+- Blockchain Explorer
+- Cors Header
+- Admin Logout / Back to Frontend
+- And other little needed things
 
 #### Table of Contents
 * [Features](#features)
@@ -92,7 +101,7 @@ Usage
 
 #### Requirements
 * Coin daemon(s) (find the coin's repo and build latest version from source)
-* simplewallet (Use the newest simplewallet 2.0.0)
+* simplewallet (Bytecoin/Forknote v1.1.11).  Do NOT use Forknote 2.0.0, since it's in alpha
 ```
 * [Node.js](http://nodejs.org/) v0.10+ ([follow these installation instructions](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager))
 * [Redis](http://redis.io/) key-value store v2.6+ ([follow these instructions](http://redis.io/topics/quickstart))
@@ -516,10 +525,7 @@ enable-cors=*
 
 ```
 var api_blockexplorer = "http://daemonhost.com:1118";
-(e.g. var api_blockexplorer ="http://62.75.139.132:39527"; with RPC-Serverport
 ```
-
-Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 
 
 Credits
