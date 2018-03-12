@@ -16,9 +16,10 @@ It works fine with Ubuntu 14.04. and latest version of forknote.
 We solved much problems with:
 
 - Blockchain Explorer
-- Cors Header
+- Enable Cors Header (apache2.conf) - Only for testmode in non ssl connections! Risk warning!
 - Admin Logout / Back to Frontend
 - And other little needed things
+- Add .htaccess for connect non ssl to ssl - Only use, if SSL Certificate is used.
 
 #### Table of Contents
 * [Features](#features)
