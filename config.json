@@ -25,24 +25,31 @@
         "ports": [
             {
                 "port": 3333,
-                "difficulty": 100,
-                "desc": "Low end hardware"
+                "difficulty": 1000,
+                "desc": "CPU - (30-40 H/s)"
             },
+  {
+                "port": 4444,
+                "difficulty": 2000,
+                "desc": "CPU - (50-200 H/s)"
+            },
+
+
             {
                 "port": 5555,
-                "difficulty": 5000,
-                "desc": "Mid range hardware"
+                "difficulty": 6000,
+                "desc": "CPU/GPU - (>300 H/s)"
             },
             {
                 "port": 7777,
-                "difficulty": 10000,
-                "desc": "High end hardware"
+                "difficulty": 20000,
+                "desc": "GPU - (500-1500 H/s)"
             },
             {
                 "port": 8888,
-                "difficulty": 10000,
-                "desc": "Hidden port",
-                "hidden": true
+                "difficulty": 132000,
+                "desc": "GPU Farm - (2 - 10 KH/s)",
+                "hidden": false
             }
         ],
         "varDiff": {
@@ -84,7 +91,7 @@
         "mixin": 1,
         "transferFee": 50000000,
         "minPayment": 500000000000000,
-        "maxTransactionAmount": 500000000000000,
+        "maxTransactionAmount": 0,
         "denomination": 10000000000
     },
 
@@ -105,7 +112,7 @@
         "port": 8117,
         "blocks": 30,
         "payments": 30,
-        "password": "admin"
+        "password": "admin321"
     },
 
     "daemon": {
@@ -119,7 +126,7 @@
     },
 
     "redis": {
-        "host": "127.0.0.1",
+        "host": "0.0.0.0",
         "port": 6379
     },
 
