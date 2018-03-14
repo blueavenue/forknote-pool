@@ -38,7 +38,7 @@ We solved much problems with:
 * [JSON-RPC Commands from CLI](#json-rpc-commands-from-cli)
 * [Monitoring Your Pool](#monitoring-your-pool)
 * [Configuring Blockchain Explorer](#configuring-blockchain-explorer)
-* [Pool Running](#Pool-running)
+* [Pool-Running](#pool-running)
 * [Credits](#credits)
 * [License](#license)
 
@@ -533,7 +533,7 @@ var api_blockexplorer = "http://daemonhost.com:1118";
 Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 
 
-### Pool-running
+### Pool-Running
 
 - Please start first the dameon and simplewallet to create a new pool address. Add the pool address to your pool config.json.
 
