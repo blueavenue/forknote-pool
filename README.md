@@ -38,6 +38,7 @@ We solved much problems with:
 * [JSON-RPC Commands from CLI](#json-rpc-commands-from-cli)
 * [Monitoring Your Pool](#monitoring-your-pool)
 * [Configuring Blockchain Explorer](#configuring-blockchain-explorer)
+* [Run Pool Step by Step] (#poolrunning)
 * [Credits](#credits)
 * [License](#license)
 
@@ -531,20 +532,23 @@ var api_blockexplorer = "http://daemonhost.com:1118";
 
 Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 
-* How to starting pool:
+
+#### Pool running:
 
 - Please start first the dameon and simplewallet to create a new pool address. Add the pool address to your pool config.json.
 
 ```
-- Go to your user/coin (e.g. /home/user/yourcoin)
-- Type Screen and then:
-- $ ./forknoted --config-file configs/yourcoin.conf --log-level 5
-- Ctrl + A + C (to open new screen tab)
-- $ ./simplewallet --config-file configs/carb.conf --wallet-file yourwallet --password yourpassword --set_log 5 --wallet-rpc-bind-ip 127.0.0.1 --wallet-rpc-bind-port 8085
-- Ctrl + A + C
-- Go to your pool folder (e.g. /home/user/pool)
-- $ node init.js
+ Go to your user/coin (e.g. /home/user/yourcoin)
+ Type Screen and then:
+ $ ./forknoted --config-file configs/yourcoin.conf --log-level 5
+ Ctrl + A + C (to open new screen tab)
+ $ ./simplewallet --config-file configs/carb.conf --wallet-file yourwallet --password yourpassword --set_log 5 --wallet-rpc-bind-ip 127.0.0.1 --wallet-rpc-bind-port 8085
+ Ctrl + A + C
+ Go to your pool folder (e.g. /home/user/pool)
+ $ node init.js
 ```
+
+Better use forever instead of screen!
 
 Credits
 ===
