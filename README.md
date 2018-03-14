@@ -542,7 +542,7 @@ Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
  Type Screen and then:
  $ ./forknoted --config-file configs/yourcoin.conf --log-level 5
  Ctrl + A + C (to open new screen tab)
- $ ./simplewallet --config-file configs/carb.conf --wallet-file yourwallet --password yourpassword --set_log 5 --wallet-rpc-bind-ip 127.0.0.1 --wallet-rpc-bind-port 8085
+ $ ./simplewallet --config-file configs/yourcoin.conf --wallet-file yourwallet --password yourpassword --set_log 5 --wallet-rpc-bind-ip 127.0.0.1 --wallet-rpc-bind-port 8085
  Ctrl + A + C
  Go to your pool folder (e.g. /home/user/pool)
  $ node init.js
