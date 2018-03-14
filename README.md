@@ -538,7 +538,9 @@ Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 - Please start first the dameon and simplewallet to create a new pool address (switch with command screen). Add the pool address to your pool config.json.
 Then type: killall screen  and follow these instruction:
 ```
- Go to your user/coin (e.g. /home/user/yourcoin)
+ VPS-Server (1) where is the pool:
+ 
+ Go to your coin-folder (e.g. /home/user/yourcoin)
  Type Screen and then:
  $ ./forknoted --config-file configs/yourcoin.conf --log-level 5
  Ctrl + A + C (to open new screen tab)
@@ -546,6 +548,23 @@ Then type: killall screen  and follow these instruction:
  Ctrl + A + C
  Go to your pool folder (e.g. /home/user/pool)
  $ node init.js
+ 
+ VPS-Server (2) for sync the blockchain:
+ 
+ Go to your coin-folder
+ $ screen 
+ $./forknoted --config-file configs/yourcoin.conf --log-level 5
+ 
+ Local Machine:
+ 
+ Start your Daemon
+ Start simplewallet
+ Create a wallet
+ Start the Cryptonote-Miner
+ Stop the Cryptonote-Miner
+ Add your wallet-address to Cryptonote-Miner folder wallet.address.txt
+ Edit the config.ini in Cryptonote-Miner folder to your Pool Address and Port
+ Start Cryptonote Miner again
 ```
 
 Better use forever instead of screen!
