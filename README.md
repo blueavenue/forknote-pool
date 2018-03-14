@@ -535,7 +535,7 @@ Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 
 ### Pool-Running
 
-- Please start first the dameon and simplewallet (on VPS-Server with the Pool) to create a new pool address (switch with command screen). Add the pool address to your pool config.json.
+- Please start first the dameon and simplewallet (on VPS-Server with the Pool) to create a new pool address (switch with command screen).  And start only the daemon on second VPS. Add the pool address to your pool config.json.
 Then type: killall screen  and follow these instruction:
 ```
  VPS-Server (1) where is the pool:
