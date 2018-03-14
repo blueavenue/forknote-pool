@@ -513,7 +513,7 @@ curl 127.0.0.1:18081/json_rpc -d '{"method":"getblockheaderbyheight","params":{"
 ### Configuring Blockchain Explorer
 
 You need the latest stable version of Forknote for the blockchain explorer - [forknote releases](https://github.com/forknote/forknote/releases)
-* Add the following code to the coin's config file:
+* Add the following code to the coin's config file (important for correct work (fixed "error polling gettemplate"):
 
 ```
 rpc-bind-ip=0.0.0.0
@@ -531,6 +531,19 @@ var api_blockexplorer = "http://daemonhost.com:1118";
 
 Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 
+* How to starting pool:
+Please start first the dameon and simplewallet to create a new pool address. Add the pool address to your pool config.json.
+
+...
+Go to your user/coin (e.g. /home/user/yourcoin)
+Type Screen and then:
+$ ./forknoted --config-file configs/yourcoin.conf --log-level 5
+Ctrl + A + C (to open new screen tab)
+$ ./simplewallet --config-file configs/carb.conf --wallet-file yourwallet --password yourpassword --set_log 5 --wallet-rpc-bind-ip 127.0.0.1 --wallet-rpc-bind-port 8085
+Ctrl + A + C
+Go to your pool folder (e.g. /home/user/pool)
+$ node init.js
+...
 
 Credits
 ===
