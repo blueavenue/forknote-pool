@@ -568,11 +568,12 @@ If you use forknote, then use forknote.exe (Windows) or forknoted (Linux) instea
  Start Cryptonote Miner again
  
  You can also use CPU-Miner Multi from user tpruvot.
- [tpruvot](//github.com/tpruvot/cpuminer-multi)
+
  
  Command to mine in pool (Linux with Properteum Pool Settings): ./cpuminer -o "stratum+tcp//:62.75.139.132:3333" -u yourwalletaddress -p x -a cryptonight -D
  The same with cpuminer.exe for Windows.
 ```
+* [tpruvot](//github.com/tpruvot/cpuminer-multi) - CPU-Miner Multi
 
 Better use forever instead of screen!
 
