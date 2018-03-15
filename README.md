@@ -38,7 +38,7 @@ We solved much problems with:
 * [JSON-RPC Commands from CLI](#json-rpc-commands-from-cli)
 * [Monitoring Your Pool](#monitoring-your-pool)
 * [Configuring Blockchain Explorer](#configuring-blockchain-explorer)
-* [Pool-Running](#pool-running)
+* [Pool-Mining](#pool-mining)
 * [Credits](#credits)
 * [License](#license)
 
@@ -533,16 +533,17 @@ var api_blockexplorer = "http://daemonhost.com:1118";
 Then upload file apache2.conf to /etc/apache2 to enable CORS Headers.
 
 
-### Pool-Running
+### Pool-Mining for Beginners
 
 - Please start first the dameon and simplewallet (on VPS-Server with the Pool) to create a new pool address (switch with command screen).  And start only the daemon on second VPS. Add the pool address to your pool config.json.
-Then type: killall screen  and follow these instruction:
+If you use forknote, then use forknote.exe (Windows) or forknoted (Linux) instead of yourcoind.exe / yourcoind. Then type: killall screen  and follow these instruction for Linux:
+
 ```
  VPS-Server (1) where is the pool:
  
  Go to your coin-folder (e.g. /home/user/yourcoin)
  Type Screen and then:
- $ ./forknoted --config-file configs/yourcoin.conf --log-level 5
+ $ ./yourcoind --config-file configs/yourcoin.conf --log-level 5
  Ctrl + A + C (to open new screen tab)
  $ ./simplewallet --config-file configs/yourcoin.conf --wallet-file yourwallet --password yourpassword --set_log 5 --wallet-rpc-bind-ip 127.0.0.1 --wallet-rpc-bind-port 8085
  Ctrl + A + C
@@ -553,11 +554,11 @@ Then type: killall screen  and follow these instruction:
  
  Go to your coin-folder
  $ screen 
- $./forknoted --config-file configs/yourcoin.conf --log-level 5
+ $ ./yourcoind --config-file configs/yourcoin.conf --log-level 5
  
- Local Machine:
+ On local Machine:
  
- Start your Daemon
+ Start your Daemon (yourcoind) in Console 
  Start simplewallet
  Create a wallet
  Start the Cryptonote-Miner
@@ -565,6 +566,11 @@ Then type: killall screen  and follow these instruction:
  Add your wallet-address to Cryptonote-Miner folder wallet.address.txt
  Edit the config.ini in Cryptonote-Miner folder to your Pool Address and Port
  Start Cryptonote Miner again
+ 
+ You can also use CPU-Miner Multi from user tpruvot.
+ 
+ Command to mine in pool (Linux with Properteum Pool Settings): ./cpuminer -o "stratum+tcp//:62.75.139.132:3333" -u yourwalletaddress -p x -a cryptonight -D
+ The same with cpuminer.exe for Windows.
 ```
 
 Better use forever instead of screen!
