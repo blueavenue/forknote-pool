@@ -38,7 +38,7 @@ We solved much problems with:
 * [JSON-RPC Commands from CLI](#json-rpc-commands-from-cli)
 * [Monitoring Your Pool](#monitoring-your-pool)
 * [Configuring Blockchain Explorer](#configuring-blockchain-explorer)
-* [Pool-Mining](#pool-mining)
+* [Pool-Mining for Beginners](#pool-mining)
 * [Credits](#credits)
 * [License](#license)
 
