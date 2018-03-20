@@ -11,15 +11,33 @@ Comes with lightweight example front-end script which uses the pool's AJAX API.
 
 This pool is configured for Properteum Coins
 
-It works fine with Ubuntu 14.04. and latest version of Properteum Repo (forknote) - solved issue with Allow Origins in src.
+It works fine with Ubuntu 14.04. and latest version of Properteum Repo (forknote) with Boost 1.55 - solved issue with Allow Origins in src.
+Or use Ubuntu 16.04 with latest version of forknote. Use Node 0.10.25 (or 0.10.48), Redis 2.6.14 and (Boost 1.58 for Ubuntu 16.04. or Boost 1.55 for Ubuntu 14.04.)
 
-We solved much problems with:
+Do this to install right Node-Version (0.10.25):
+
+$ sudo apt-get remove npm nodejs -y
+$ wget https://nodejs.org/dist/v0.10.25/node-v0.10.25.tar.gz && tar xvzf node-v0.10.25.tar.gz
+$ cd node-v0.10.25
+$ make
+$ sudo make install
+
+Install Redis manually! Here we go:
+
+$ wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/redis/redis-2.6.14.tar.gz
+$ tar xvzf redis-2.6.14.tar.gz
+$ make
+$ sudo make install
+$ cd utils
+$ sudo ./install_server.sh 
+
+We changed some things:
 
 - Blockchain Explorer
 - Enable Cors Header (apache2.conf) - Only for testmode in non ssl connections! Risk warning!
 - Admin Logout / Back to Frontend
 - And other little needed things
-- Add .htaccess for connect non ssl to ssl - Only use, if SSL Certificate is used.
+- Added .htaccess for redirect non ssl to ssl - Only use, if SSL Certificate is used.
 
 #### Table of Contents
 * [Features](#features)
