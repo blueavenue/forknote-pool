@@ -16,20 +16,21 @@ Or use Ubuntu 16.04 with latest version of forknote. Use Node 0.10.25 (or 0.10.4
 
 Do this to install right Node-Version (0.10.25):
 
-$ sudo apt-get remove npm nodejs -y
-$ wget https://nodejs.org/dist/v0.10.25/node-v0.10.25.tar.gz && tar xvzf node-v0.10.25.tar.gz
-$ cd node-v0.10.25
-$ make
-$ sudo make install
+- $ sudo apt-get remove npm nodejs -y
+- $ wget https://nodejs.org/dist/v0.10.25/node-v0.10.25.tar.gz && tar xvzf node-v0.10.25.tar.gz
+- $ cd node-v0.10.25
+- $ make
+- $ sudo make install
 
 Install Redis manually! Here we go:
 
-$ wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/redis/redis-2.6.14.tar.gz
-$ tar xvzf redis-2.6.14.tar.gz
-$ make
-$ sudo make install
-$ cd utils
-$ sudo ./install_server.sh 
+- $ wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/redis/redis-2.6.14.tar.gz
+- $ tar xvzf redis-2.6.14.tar.gz
+- $ make
+- $ sudo make install
+- $ cd utils
+- $ sudo ./install_server.sh 
+
 
 We changed some things:
 
