@@ -2,27 +2,27 @@ var api = "http://62.75.139.132:8117";
 
 var api_blockexplorer="http://62.75.139.132:39527";
 
-var poolHost = "62.75.139.132";
+var poolHost = "pool.properteum.de";
 
 var irc = "irc.freenode.net/#poolHost";
 
-var email = "support@poolhost.com";
+var email = "info@properteum.de";
 
-var cryptonatorWidget = ["BTC-USD", "BTC-EUR", "XMR-USD", "ETH-USD"];
+var cryptonatorWidget = ["BTC-USD", "BTC-EUR", "XMR-USD"];
 
 var easyminerDownload = "http://62.75.166.5/properteum/downloads/";
 
-var blockchainExplorer = "http://62.75.139.132/pool/?hash={id}#blockchain_block";
+var blockchainExplorer = "http://pool.properteum.de/?hash={id}#blockchain_block";
 
-var transactionExplorer = "http://62.75.139.132/pool/?hash={id}#blockchain_transaction";
+var transactionExplorer = "http://pool.properteum.de/?hash={id}#blockchain_transaction";
 
-var networkExplorer = "http://62.75.139.132./pool/#network";
+var networkExplorer = "http://pool.properteum.de#network";
 
 var themeCss = "themes/default-theme.css";
 
 var networkStat = {
 	"xpr": [
-        ["62.75.139.132/pool", "http://62.75.139.132:8117"]
+        ["pool.properteum.de", "http://62.75.139.132:8117"]
         ],
 
 	"bcn": [
