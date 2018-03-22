@@ -590,7 +590,8 @@ If you use forknote, then use forknote.exe (Windows) or forknoted (Linux) instea
 
  
  Command to mine in pool (Linux with Properteum Pool Settings): ./cpuminer -o "stratum+tcp://pool.properteum.de:3333" -u yourwalletaddress -p x -a cryptonight -D
- The same with cpuminer.exe for Windows.
+ (You have to build the miner from source [only Linux] - please follow the build instruction from the developer page). In a few days, we upload a linux/MacOs version.
+ For windows run in command: cpuminer.exe -o "stratum+tcp://pool.properteum.de:3333" -u yourwalletaddress -p x -a cryptonight -D
 ```
 * [tpruvot](//github.com/tpruvot/cpuminer-multi) - CPU-Miner Multi
 
