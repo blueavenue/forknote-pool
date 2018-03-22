@@ -586,7 +586,7 @@ If you use forknote, then use forknote.exe (Windows) or forknoted (Linux) instea
  Edit the config.ini in Cryptonote-Miner folder to your Pool Address and Port
  Start Cryptonote Miner again
  
- You can also use CPU-Miner Multi from user tpruvot.
+ You can also use CPU-Miner Multi from user tpruvot  (supports 32-Bit Systems).
 
  
  Command to mine in pool (Linux with Properteum Pool Settings): ./cpuminer -o "stratum+tcp://pool.properteum.de:3333" -u yourwalletaddress -p x -a cryptonight -D
