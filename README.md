@@ -14,6 +14,8 @@ This pool is configured for Properteum Coins
 It works fine with Ubuntu 14.04. and latest version of Properteum Repo (forknote) with Boost 1.55 - solved issue with Allow Origins in src.
 Or use Ubuntu 16.04 with latest version of forknote. Use Node 0.10.25 (or 0.10.48), Redis 2.6.14 and (Boost 1.58 for Ubuntu 16.04. or Boost 1.55 for Ubuntu 14.04.)
 
+The Properteum Forknote Repo (stable Version) works at this time only with Boost 1.55 - in a few days we do a update. Thanks!
+
 Do this to install right Node-Version (0.10.25):
 
 - $ sudo apt-get remove npm nodejs -y
